@@ -3,8 +3,36 @@
   %head
     %title
       Pony Pops
-    = stylesheet_link_tag "normalize", "style", "bootstrap" 
+    = stylesheet_link_tag "normalize", "style" , "bootstrap"
     = javascript_include_tag "jquery", "scripts"
   %body
+    %header
+      .wrapped
+        .header-inner.full-width.inline-block
+          %a.logo.three.columns.alpha{:href=>"#"}
+          .five.columns
+            %ul.main-nav.font-two
+              %li.border-bottom.border-top
+                %a{:href=>"#"}
+                  Shop
+              %li.border-bottom.border-top
+                %a{:href=>"#"}
+                  About
+              %li.border-bottom.border-top
+                %a{:href=>"#"}
+                  Contact
+              %li.border-bottom.border-top
+                %a{:href=>"#"}
+                  News
+          .admin-pannel.font-two
+            .three.columns.offset-by-one
+              %a.cart.button.right{:href=>"#"}
+                %i.icon-shopping-cart.icon-white
+                100 items
+            .four.columns.omega
+              %a.button.dropdown.right.full-width{:href=>"#"}
+                Clint Eastwood
+                .icon-white.icon-play
+    .clearfix
     = yield 
     = partial "footer"

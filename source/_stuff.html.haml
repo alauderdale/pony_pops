@@ -1,0 +1,625 @@
+%h1.border-bottom
+  Typogrophy
+%h2
+  Headings
+%p
+  All HTML headings are available.
+%h1 
+  This is 1st level heading &lt;h1&gt;
+%h2 
+  This is 2nd level heading &lt;h2&gt;
+%h3 
+  This is 3rd level heading &lt;h3&gt;
+%h4 
+  This is 4th level heading &lt;h4&gt;
+%h5 
+  This is 5th level heading &lt;h5&gt;
+%h6 
+  This is 6th level heading &lt;h6&gt;
+%h2
+  Body copy
+%p
+  Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
+%p
+  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.
+%p
+  Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+%h2
+  Lead body copy
+%p
+  Make a paragraph stand out by adding 
+  %code
+    \.lead
+%p.lead
+  Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+%h2
+
+  Emphasis
+%p
+  For de-emphasizing inline or blocks of text, use the 
+  %code
+    &lt;small&gt;
+  tag.
+%small
+  This line of text is meant to be treated as fine print.
+.row
+%h2
+
+  Bold
+%p
+  For emphasizing text, use 
+  %code
+    &lt;strong&gt;
+%p
+  The following snippet of text is rendered as 
+  %strong
+    bold text.
+%h2
+
+  Italics
+%p
+For emphasizing a snippet of text with italics use 
+%code
+  &lt;em&gt;
+%p
+  The following snippet of text is rendered as 
+  %em
+    italic.
+%h2
+
+  Text alignment
+%p
+  Realign text to components with text alignment classes. Use:
+  %code
+    \.text-left
+  %code
+    \.text-right
+  %code
+    \.text-center
+%p.text-left
+  Left aligned text
+%p.text-center
+  Center aligned text
+%p.text-right
+  Right aligned text
+%h2
+
+  Emphasis classes
+%p
+  Highlight text with emphasis utility classes. Use
+  %code
+    \.muted
+  %code
+    \.text-warning
+  %code
+    \.text-error
+  %code
+    \.text-info
+  %code
+    \.text-success
+%p.muted
+  This is a snippet of muted text
+%p.text-warning
+  This is a snippet of warning text
+%p.text-error
+  This is a snippet of error text
+%p.text-info
+  This is a snippet of info text
+%p.text-success
+  This is a snippet of success text
+%h2
+
+  Blockquote
+%p
+  For quoting blocks of content from another source within your element use
+  %code
+    &lt;blockquote&gt;
+%blockquote
+  %p
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    %br
+    %small
+      \- Kimmy Smith
+%h2
+
+  Lists
+%h4
+
+  Ordered
+%p
+  A list of items in which the order does explicitly matter. Use
+  %code
+    &lt;ol&gt;...&lt;/ol&gt;
+%ol
+  %li
+    Lorem ipsum dolor sit amet
+  %li
+    Consectetur adipiscing elit
+  %li
+    Integer molestie lorem at massa
+%h4
+
+  Un-Ordered
+%p
+  A list of items in which the order does not explicitly matter. Use
+  %code
+    &lt;ul&gt;...&lt;/ul&gt;
+%ul
+  %li
+    Lorem ipsum dolor sit amet
+  %li
+    Consectetur adipiscing elit
+  %li
+    Integer molestie lorem at massa
+%h4
+
+  Menu
+%p
+  This is a menu list. Use
+  %code
+    &lt;menu&gt;...&lt;/menu&gt;
+%menu
+  %li
+    Lorem ipsum dolor sit amet
+  %li
+    Consectetur adipiscing elit
+  %li
+    Integer molestie lorem at massa
+%h4
+
+  Inline
+%p
+  This is an inline list. Use
+  %code
+    &lt;ul class="inline"&gt;
+%ul.inline
+  %li
+    Lorem ipsum dolor sit amet
+  %li
+    Consectetur adipiscing elit
+  %li
+    Integer molestie lorem at massa
+%h2
+
+  Text columns
+%p
+  Your text can have up to four columns. To add columns to your text use the
+  %code
+    \.text_columns_2
+  %code
+    \.text_columns_3
+  %code
+    \.text_columns_4
+  classes
+%h4
+
+  Two columns 
+%p.text_columns_2
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquet sodales lacus, vestibulum semper quam rutrum a. Curabitur condimentum consequat felis quis sollicitudin. Duis at aliquet erat. Nulla vel diam ac lacus bibendum fermentum ut ac ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur ut quam magna, non ultrices sapien. Nulla eu hendrerit ante.
+%h4
+
+  Three columns 
+%p.text_columns_3
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquet sodales lacus, vestibulum semper quam rutrum a. Curabitur condimentum consequat felis quis sollicitudin. Duis at aliquet erat. Nulla vel diam ac lacus bibendum fermentum ut ac ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur ut quam magna, non ultrices sapien. Nulla eu hendrerit ante.
+%h4
+
+  Four columns 
+%p.text_columns_4
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas aliquet sodales lacus, vestibulum semper quam rutrum a. Curabitur condimentum consequat felis quis sollicitudin. Duis at aliquet erat. Nulla vel diam ac lacus bibendum fermentum ut ac ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur ut quam magna, non ultrices sapien. Nulla eu hendrerit ante.
+.row
+%h1.border-bottom
+
+  Tables
+%h2
+
+  Default table
+%p
+  For basic styling use
+  %code
+    &lt;table class="table"&gt;...&lt;/table&gt;
+%table.table
+  %thead
+    %tr
+      %th #
+      %th First Name
+      %th Last Name
+      %th Username
+  %tbody
+    %tr
+      %td 1
+      %td Mark
+      %td Otto
+      %td @mdo
+    %tr
+      %td 2
+      %td Jacob
+      %td Thornton
+      %td @fat
+    %tr
+      %td 3
+      %td Larry
+      %td the Bird
+      %td @twitter
+.row
+%h2
+
+  Optional table classes
+%p
+  Add any of the following classes to the
+  %code
+    \.table
+  class.
+%p
+  %code
+    \.table-striped
+  adds striping to every other row
+%table.table.table-striped
+  %thead
+    %tr
+      %th #
+      %th First Name
+      %th Last Name
+      %th Username
+  %tbody
+    %tr
+      %td 1
+      %td Mark
+      %td Otto
+      %td @mdo
+    %tr
+      %td 2
+      %td Jacob
+      %td Thornton
+      %td @fat
+    %tr
+      %td 3
+      %td Larry
+      %td the Bird
+      %td @twitter
+.row
+%p
+  %code
+    \.table-bordered
+  ads border to table
+%table.table.table-bordered
+  %thead
+    %tr
+      %th #
+      %th First Name
+      %th Last Name
+      %th Username
+  %tbody
+    %tr
+      %td 1
+      %td Mark
+      %td Otto
+      %td @mdo
+    %tr
+      %td 2
+      %td Jacob
+      %td Thornton
+      %td @fat
+    %tr
+      %td 3
+      %td Larry
+      %td the Bird
+      %td @twitter
+.row
+%h2
+
+  Optional row classes
+%p
+  Example:
+  %code
+    &lt;tr class="success"&gt;...&lt;/tr&gt;
+%table.table.table-bordered
+  %thead
+    %tr
+      %th class
+      %th descrption
+  %tbody
+    %tr.success
+      %td 
+        %code
+          \.success
+      %td used for successfull things
+    %tr.error
+      %td 
+        %code
+          \.error
+      %td used for negative things
+    %tr.info
+      %td 
+        %code
+          \.info
+      %td used for highlighting
+    %tr.warning
+      %td 
+        %code
+          \.warning
+      %td used to warn
+.row
+%h1.border-bottom
+
+  Forms
+%h2
+
+  Default styles
+%form
+  %fieldset
+    %legend 
+      Legend
+    %label 
+      Label name
+    %input{:placeholder => "Type something…", :type => "text"}/
+    %span.help-block 
+      Example block-level help text here.
+    %label.checkbox
+      %input{:type => "checkbox"}/
+      Check me out
+    %button.btn{:type => "submit"} 
+      Submit
+    %textarea{:rows=>"3"}
+      Default text style
+  %label.radio
+    %input#optionsRadios1{:checked => "", :name => "optionsRadios", :type => "radio", :value => "option1"}/
+    Option one 
+  %label.radio
+    %input#optionsRadios2{:name => "optionsRadios", :type => "radio", :value => "option2"}/
+    Option two will deselect option one
+  %select
+    %option
+      option 1
+    %option
+      option 2
+  %select{:multiple=>"multiple"}
+    %option
+      option 1
+    %option
+      option 2
+.row
+%h1.border-bottom
+
+  Buttons
+%h2
+
+  Default buttons
+%p
+  Button styles can be applied to anything with the
+  %code 
+    \.button 
+  class applied. However, typically you'll want to apply these to only
+  %code 
+    &lt;a&gt;
+  and 
+  %code
+    &lt;button&gt; 
+  elements for the best rendering.
+%table.table.table-bordered
+  %thead
+    %tr
+      %th
+        Button
+      %th
+        class=""
+      %th
+        use
+  %tbody
+    %tr
+      %td
+        %a.button
+          Default
+      %td
+        %code
+          \.button
+      %td
+        Standard button
+    %tr
+      %td
+        %a.button.button-success
+          Success
+      %td
+        %code
+          \.button button-success
+      %td
+        Success button
+    %tr
+      %td
+        %a.button.button-warning
+          Warning
+      %td
+        %code
+          \.button button-warning
+      %td
+        Warning button
+    %tr
+      %td
+        %a.button.button-error
+          Error
+      %td
+        %code
+          \.button button-error
+      %td
+        Error button
+    %tr
+      %td
+        %a{:href=>"#",:style=>"margin-left:10px;"}
+          Link
+      %td
+        %code
+          a
+      %td
+        Standard link
+.row
+%h2
+
+  Full width button
+%p
+  Apply the 
+  %code 
+    \.full-width 
+  class to make a button full width.
+%a.button.full-width
+  I'm a full width button
+%h2
+
+  Disabled State
+%p
+  Add the 
+  %code
+    \.disabled
+  class to buttons
+%a.button.disabled
+  Default button
+%a.button.button-success.disabled
+  Success button
+%a.button.button-error.disabled
+  Error button
+%h1.border-bottom
+
+  Alerts
+%h2
+
+  Default alerts
+%h4
+
+  Warning alert
+%p
+  for a warning alert use the
+  %code
+    \.alert
+  class
+.alert
+  %p
+  
+    Hey there
+    Im a basic alert! Get it?
+%h4
+
+  Error alert
+%p
+  for a error alert use
+  %code
+    &lt;div class="alert alert-error"&gt;...&lt;/div&gt;
+.alert.alert-error
+  %p
+  
+    Oh no
+    Im an error!
+%h4
+
+  Info alert
+%p
+  for an info alert use
+  %code
+    &lt;div class="alert alert-info"&gt;...&lt;/tr&gt;
+.alert.alert-info
+  %p
+  
+    Aernt I informative?
+%h4
+
+  Success alert
+%p
+  for a success alert use
+  %code
+    &lt;div class="alert alert-success"&gt;...&lt;/tr&gt;
+.alert.alert-success
+  %p
+  
+    success!
+    good for you
+%h1.border-bottom
+
+  Badges & Labels
+%h2
+
+  Labels
+%table.table.table-bordered
+  %thead
+    %tr
+      %th label
+      %th use
+  %tbody
+    %tr
+      %td 
+        %span.label
+          Default
+      %td 
+        %code
+          &lt;span class="label"&gt;Default&lt;/span&gt;
+    %tr
+      %td 
+        %span.label.label-success
+          Success
+      %td 
+        %code
+          &lt;span class="label label-success"&gt;Success&lt;/span&gt;
+    %tr
+      %td 
+        %span.label.label-warning
+          Warning
+      %td 
+        %code
+          &lt;span class="label label-warning"&gt;Warning&lt;/span&gt;
+    %tr
+      %td 
+        %span.label.label-error
+          Error
+      %td 
+        %code
+          &lt;span class="label label-error"&gt;Error&lt;/span&gt;
+    %tr
+      %td 
+        %span.label.label-info
+          Info
+      %td 
+        %code
+          &lt;span class="label label-info"&gt;Info&lt;/span&gt;
+.row
+%h2
+
+  Badges
+%table.table.table-bordered
+  %thead
+    %tr
+      %th Badge
+      %th use
+  %tbody
+    %tr
+      %td 
+        %span.badge
+          0
+      %td 
+        %code
+          &lt;span class="badge"&gt;0&lt;/span&gt;
+    %tr
+      %td 
+        %span.badge.badge-success
+          1
+      %td 
+        %code
+          &lt;span class="badge badge-success"&gt;1&lt;/span&gt;
+    %tr
+      %td 
+        %span.badge.badge-warning
+          2
+      %td 
+        %code
+          &lt;span class="badge badge-warning"&gt;2&lt;/span&gt;
+    %tr
+      %td 
+        %span.badge.badge-error
+          3
+      %td 
+        %code
+          &lt;span class="badge badge-error"&gt;4&lt;/span&gt;
+    %tr
+      %td 
+        %span.badge.badge-info
+          4
+      %td 
+        %code
+          &lt;span class="badge badge-info"&gt;4&lt;/span&gt;
+.row

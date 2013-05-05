@@ -1,33 +1,5 @@
-%header
-  .wrapped
-    .header-inner.full-width.inline-block
-      %a.logo.grid_2.alpha{:href=>"#"}
-      .grid_3.suffix_2
-        %ul.main-nav.font-two
-          %li.border-bottom.border-top
-            %a{:href=>"#"}
-              Shop
-          %li.border-bottom.border-top
-            %a{:href=>"#"}
-              About
-          %li.border-bottom.border-top
-            %a{:href=>"#"}
-              Contact
-          %li.border-bottom.border-top
-            %a{:href=>"#"}
-              News
-      .admin-pannel.font-two
-        .grid_2
-          %a.cart.btn.left{:href=>"#"}
-            %i.icon-shopping-cart.icon-white
-            1 item
-        .grid_3.omega
-          %a.btn.dropdown.right.full-width{:href=>"#"}
-            Clint Eastwood
-            .i.icon-flag.icon-white.icon-play.right
-.clearfix
 .wrapped
-  %sidebar.sidebar.grid_2.alpha{:style=>"margin-top:29px;"}
+  %sidebar.sidebar.three.columns.alpha{:style=>"margin-top:29px;"}
     %h5.text-uppercase.border-bottom
       My Profile
     %a{:href=>"#"}
@@ -39,7 +11,7 @@
     %a{:href=>"#"}
       %h5
         Profile Options
-  .grid_10.omega
+  .thirteen.columns.omega
     %h2.border-bottom
       Account Settings
     %h1
@@ -87,75 +59,3 @@
         two
       %li
         Three. Well, probably this list item should be longer so that it will probably wrap to the next line in rendering.
-    / %h3
-    /   Forms
-    / .div
-    /   %label
-    /     reset button:
-    /     %input{:type=>"submit", :name=>"submit", :value=>"button"}
-    / .div
-    /   %label
-    /     regular button
-    /     %button{:type=>"button", :value=>"bar"}
-    /       Button Guy Thing
-    / .div
-    /   %a.btn{:href=>"#"}
-    /     Button
-    / .div
-    /   %label{:for=>"f1"}
-    /     Single-line text input field: 
-    /     %input{:id=>"f1", :name=>"text", :size=>"20", :value=>"Default text."}
-    / .div
-    /   %label{:for=>"f2"}
-    /     Multi-line text input field (textarea):
-    /     %br
-    /     %textarea{:id=>"f2", :name=>"textarea", :rows=>"2", :cols=>"20", :placeholder=>"Placeholder"}
-    / %fieldset
-    /   .div
-    /     %label{:for=>"f3"}
-    /       %input{:id=>"f3", :type=>"radio", :name=>"radio", :value=>"1"}
-    /       Radio button 1
-    /   .div
-    /     %label{:for=>"f4"}
-    /       %input{:id=>"f4", :type=>"radio", :name=>"radio", :value=>"2"}
-    /       Radio button 2
-    / %fieldset
-    /   .div
-    /     %label{:for=>"f5"}
-    /       %input{:id=>"f5", :type=>"checkbox", :name=>"checkbox", :value=>"1"}
-    /       Checkbox 1
-    /   .div
-    /     %label{:for=>"f6"}
-    /       %input{:id=>"f6", :type=>"checkbox", :name=>"checkbox", :value=>"2"}
-    /       Checkbox button 2
-    / %table{:summary=>"Each row names a Nordic country and specifies its total area and land area, in square kilometers"}
-    /   %caption
-    /     Sample table: Areas of the Nordic countries, in sq km
-    /   %tbody
-    /     %tr
-    /       %th{:scope=>"col"}
-    /         Country 
-    /       %th{:scope=>"col"}
-    /         Total area
-    /       %th{:scope=>"col"}
-    /         Land area
-    /       %th{:scope=>"col"}
-    /         Another
-    /     %tr
-    /       %th{:scope=>"row"}
-    /         Denmark
-    /       %td{:align=>"RIGHT"} 
-    /         43,070 
-    /       %td{:align=>"RIGHT"} 
-    /         42,370
-    /       %td{:align=>"RIGHT"} 
-    /         42,370
-    /     %tr
-    /       %th{:scope=>"row"}
-    /         Finland
-    /       %td{:align=>"RIGHT"} 
-    /         43,070 
-    /       %td{:align=>"RIGHT"} 
-    /         42,370
-    /       %td{:align=>"RIGHT"} 
-    /         42,370
