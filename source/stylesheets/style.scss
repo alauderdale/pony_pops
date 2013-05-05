@@ -1,0 +1,577 @@
+@import 'bourbon/bourbon';
+
+//fonts
+
+@font-face {
+    font-family: 'oswaldregular';
+    src: url('fonts/oswald-webfont-webfont.eot');
+    src: url('fonts/oswald-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/oswald-webfont-webfont.woff') format('woff'),
+         url('fonts/oswald-webfont-webfont.ttf') format('truetype'),
+         url('fonts/oswald-webfont-webfont.svg#oswaldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+//grid
+
+$gw-column: 60px;          // Column Width
+$gw-gutter: 20px;           // Gutter Width
+$grid-unit: 80px;           
+
+
+/* Containers */
+.wrapped {
+  margin-left: auto;
+  margin-right: auto;
+  width: grid-width(12);
+}
+
+/* Grid >> Global */
+
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12 {
+  display:inline;
+  float: left;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+
+.push_1, .pull_1,
+.push_2, .pull_2,
+.push_3, .pull_3,
+.push_4, .pull_4,
+.push_5, .pull_5,
+.push_6, .pull_6,
+.push_7, .pull_7,
+.push_8, .pull_8,
+.push_9, .pull_9,
+.push_10, .pull_10,
+.push_11, .pull_11,
+.push_12, .pull_12 {
+  position:relative;
+}
+
+
+/* Grid >> Children (Alpha ~ First, Omega ~ Last) */
+
+.alpha {
+  margin-left: 0;
+}
+
+.omega {
+  margin-right: 0;
+}
+
+/* Grid >> 12 Columns */
+
+
+.grid_1 {
+  width: grid-width(1);
+}
+
+.grid_2 {
+  width: grid-width(2);
+}
+
+.grid_3 {
+  width: grid-width(3);
+}
+
+.grid_4 {
+  width: grid-width(4);
+}
+
+.grid_5 {
+  width: grid-width(5);
+}
+
+.grid_6 {
+  width: grid-width(6);
+}
+
+.grid_7 {
+  width: grid-width(7);
+}
+
+.grid_8 {
+  width: grid-width(8);
+}
+
+.grid_9 {
+  width: grid-width(9);
+}
+
+.grid_10 {
+  width: grid-width(10);
+}
+
+.grid_11 {
+  width: grid-width(11);
+}
+
+.grid_12 {
+  width: grid-width(12);
+}
+
+
+
+
+/* Prefix Extra Space >> 12 Columns */
+
+
+.prefix_1 {
+  padding-left:modular-scale($grid-unit,1,1);
+}
+
+.prefix_2 {
+  padding-left:modular-scale($grid-unit,1,2);
+}
+
+.prefix_3 {
+  padding-left:modular-scale($grid-unit,1,3);
+}
+
+.prefix_4 {
+  padding-left:modular-scale($grid-unit,1,4);
+}
+
+.prefix_5 {
+  padding-left:modular-scale($grid-unit,1,5);
+}
+
+.prefix_6 {
+  padding-left:modular-scale($grid-unit,1,6);
+}
+
+.prefix_7 {
+  padding-left:modular-scale($grid-unit,1,7);
+}
+
+.prefix_8 {
+  padding-left:modular-scale($grid-unit,1,8);
+}
+
+.prefix_9 {
+  padding-left:modular-scale($grid-unit,1,9);
+}
+
+.prefix_10 {
+  padding-left:modular-scale($grid-unit,1,10);
+}
+
+.prefix_11 {
+  padding-left:modular-scale($grid-unit,1,11);
+}
+
+/* Suffix Extra Space >> 12 Columns */
+
+
+.suffix_1 {
+  padding-right:modular-scale($grid-unit,1,1);
+}
+
+.suffix_2 {
+  padding-right:modular-scale($grid-unit,1,2);
+}
+
+.suffix_3 {
+  padding-right:modular-scale($grid-unit,1,3);
+}
+
+.suffix_4 {
+  padding-right:modular-scale($grid-unit,1,4);
+}
+
+.suffix_5 {
+  padding-right:modular-scale($grid-unit,1,5);
+}
+
+.suffix_6 {
+  padding-right:modular-scale($grid-unit,1,6);
+}
+
+.suffix_7 {
+  padding-right:modular-scale($grid-unit,1,7);
+}
+
+.suffix_8 {
+  padding-right:modular-scale($grid-unit,1,8);
+}
+
+.suffix_9 {
+  padding-right:modular-scale($grid-unit,1,9);
+}
+
+.suffix_10 {
+  padding-right:modular-scale($grid-unit,1,10);
+}
+
+.suffix_11 {
+  padding-right:modular-scale($grid-unit,1,11);
+}
+
+
+
+/* Push Space >> 12 Columns */
+
+
+.push_1 {
+  left:modular-scale($grid-unit,1,1);
+}
+
+.push_2 {
+  left:modular-scale($grid-unit,1,2);
+}
+
+.push_3 {
+  left:modular-scale($grid-unit,1,3);
+}
+
+.push_4 {
+  left:modular-scale($grid-unit,1,4);
+}
+
+.push_5 {
+  left:modular-scale($grid-unit,1,5);
+}
+
+.push_6 {
+  left:modular-scale($grid-unit,1,6);
+}
+
+.push_7 {
+  left:modular-scale($grid-unit,1,7);
+}
+
+.push_8 {
+  left:modular-scale($grid-unit,1,8);
+}
+
+.push_9 {
+  left:modular-scale($grid-unit,1,9);
+}
+
+.push_10 {
+  left:modular-scale($grid-unit,1,10);
+}
+
+.push_11 {
+  left:modular-scale($grid-unit,1,11);
+}
+
+
+
+/* Pull Space >> 12 Columns */
+
+
+.pull_1 {
+  left:modular-scale(-$grid-unit,1,1);
+}
+
+.pull_2 {
+  left:modular-scale(-$grid-unit,1,2);
+}
+
+.pull_3 {
+  left:modular-scale(-$grid-unit,1,3);
+}
+
+.pull_4 {
+  left:modular-scale(-$grid-unit,1,4);
+}
+
+.pull_5 {
+  left:modular-scale(-$grid-unit,1,5);
+}
+
+.pull_6 {
+  left:modular-scale(-$grid-unit,1,6);
+}
+
+.pull_7 {
+  left:modular-scale(-$grid-unit,1,7);
+}
+
+.pull_8 {
+  left:modular-scale(-$grid-unit,1,8);
+}
+
+.pull_9 {
+  left:modular-scale(-$grid-unit,1,9);
+}
+
+.pull_10 {
+  left:modular-scale(-$grid-unit,1,10);
+}
+
+.pull_11 {
+  left:modular-scale(-$grid-unit,1,11);
+}
+
+//clearfix
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.clearfix:after {
+  clear: both;
+  content: ' ';
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+
+.clearfix {
+  display: block;
+}
+
+//vars
+
+//font vars
+
+$font-one: 'oswaldregular';
+$font-two: 'American Typewriter', 'Courier New', Courier, Serif;
+$font-three: 'helvetica';
+
+
+//color vars
+
+$bg-color: #f2edde;  
+$primary-color: #03400e;
+$secondary-color: #643c22;  
+$text-color:#404040;
+
+
+
+//type
+
+p, li, ul, ol, label, td, th, caption{
+  color:$text-color;
+  line-height:1.8em;
+  font-weight:100;
+}
+
+h1,h2{
+  font-family:$font-one;
+}
+
+h4,h5{
+  font-family:$font-two;
+}
+
+h1,h2,h4{
+  color:$secondary-color;
+}
+
+h1{
+  text-transform:uppercase;
+}
+
+h1{
+  font-size:3.5em;
+}
+
+h2{
+  font-size:1.8em;
+}
+
+h3{
+  font-size:1.8em;
+  font-weight:100;
+  color:$text-color;
+}
+
+h4{
+  font-size:1.5em;
+  font-weight:100;
+}
+
+//links
+
+a{
+  text-decoration:none;
+  color:$primary-color;
+  &:hover{
+    color:tint($primary-color,30%);
+    @include transition-duration(.2s);
+  }
+  &.btn{
+    background-color:$primary-color;
+    color:#fff;
+    padding:10px 40px;
+    display:inline-block;
+    @include transition-duration(.2s);
+    &:hover{
+      background-color:tint($primary-color,20%);
+    }
+  }
+}
+
+//global text
+
+.text-uppercase{
+  text-transform:uppercase;
+}
+
+.font-one{
+  font-family:$font-one;
+}
+
+.font-two{
+  font-family:$font-two;
+}
+
+
+//global
+
+body{
+  background-color:$bg-color;
+  font-family:$font-three;
+  font-size:12pt;
+  background-image:url(../images/top-pattern.png);
+  background-repeat:repeat-x;
+
+}   
+
+
+.wrapped{
+  width: grid-width(12);
+  margin:0 auto;
+} 
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+
+.border-bottom{
+  border-bottom:dashed 1px $secondary-color;
+}
+
+.border-top{
+  border-top:dashed 1px $secondary-color;
+}
+
+.full-width{
+  width:100%;
+}
+
+.inline-block{
+  display:inline-block;
+}
+
+a.box-rounded{
+  background-color:$primary-color;
+  padding:10px;
+  margin:0;
+  color:#fff;
+  border-radius:4px;
+    &:hover{
+      background-color:$primary-color(tint,90%);
+  }
+}
+
+//header
+
+header{
+  .header-inner{
+    background-image:url(../images/all_natural.png);
+    background-repeat:no-repeat;
+    background-position-x:right;
+  }
+  ul{
+    list-style:none;
+    &.main-nav{
+      float: left;
+      margin:0;
+      padding:0;
+      li{
+        float: left;
+        width:90px;
+        margin-right:20px;
+        &:nth-child(even){
+          margin-right:0!important;
+        }
+        &:first-child, &:nth-child(3n+2){
+          border-bottom:none;
+        }
+        a{
+          display:block;
+        }
+      }
+    }
+  }
+  margin-top:20px;
+  .admin-pannel{
+    margin-top:15px;
+    a{
+      border-radius:5px;
+    }
+    .btn{
+      padding:10px 20px;
+    }
+    .icon-play{
+      @include transform(rotate(90deg));
+    }
+  }
+}
+
+.logo{
+  height:101px;
+  background-image:url(../images/logo.png);
+}
+
+
+///footer
+
+footer{
+  margin-top:100px;
+  background-color:black;
+  float: left;
+  width:100%;
+  padding:20px 0 200px 0;
+  color:#fff;
+  h2{
+    color:#fff;
+    border-bottom:1px solid #333;
+  }
+  p{
+    color:#bbbbbb;
+    font-size:.9em;
+  }
+}

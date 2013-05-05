@@ -1,0 +1,10 @@
+!!!
+%html
+  %head
+    %title
+      Pony Pops
+    = stylesheet_link_tag "normalize", "style", "bootstrap" 
+    = javascript_include_tag "jquery", "scripts"
+  %body
+    = yield 
+    = partial "footer"
