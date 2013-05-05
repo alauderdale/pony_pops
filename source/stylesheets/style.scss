@@ -3,14 +3,14 @@
 //fonts
 
 @font-face {
-    font-family: 'oswaldregular';
-    src: url('fonts/oswald-webfont-webfont.eot');
-    src: url('fonts/oswald-webfont-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/oswald-webfont-webfont.woff') format('woff'),
-         url('fonts/oswald-webfont-webfont.ttf') format('truetype'),
-         url('fonts/oswald-webfont-webfont.svg#oswaldregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'oswaldregular';
+  src: url('fonts/oswald-webfont-webfont.eot');
+  src: url('fonts/oswald-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/oswald-webfont-webfont.woff') format('woff'),
+       url('fonts/oswald-webfont-webfont.ttf') format('truetype'),
+       url('fonts/oswald-webfont-webfont.svg#oswaldregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 //vars
@@ -145,7 +145,8 @@ table {
   @include columns($text-column-gutter-width 4);
 }
 
-//display
+//display & positioning
+
 ul.inline{
     list-style:none;
     margin-left:0;
@@ -162,6 +163,9 @@ ul.inline{
 }
 .margin-right{
     margin-right:20px!important;
+}
+.margin-left{
+    margin-left:20px!important;
 }
 
 .padding-left{
@@ -241,7 +245,7 @@ code{
   border: 1px solid #e1e1e8;
 }
 
-//alignment
+//text alignment
 
 .text-left{
     text-align:left;
@@ -410,29 +414,35 @@ padding: 0;
     color:$warning-color;
     P,h1,h2,h3,h4,h5,h6{
         margin-bottom:0;
+        color:shade($warning-color,50%);
     }
     &.alert-error{
         background-color: tint($error-color,90%);
         border: 1px solid $error-color;
         color:$error-color;
+        P,h1,h2,h3,h4,h5,h6{
+          color:shade($error-color,50%);
+        }
     }
     &.alert-info{
         background-color: tint($primary-color,90%);
         border: 1px solid $primary-color;
         color:$primary-color;
-    }
-    &.alert-warning{
-        background-color: tint($warning-color,90%);
-        border: 1px solid $warning-color;
-        color:$warning-color;
+        P,h1,h2,h3,h4,h5,h6{
+          color:shade($primary-color,50%);
+        }
     }
     &.alert-success{
         background-color: tint($success-color,90%);
         border: 1px solid $success-color;
         color:$success-color;
+        P,h1,h2,h3,h4,h5,h6{
+          color:shade($success-color,50%);
+        }
     }
 }
-    //labels
+//labels
+
 .label, .badge{
     display: inline-block;
     padding: 2px 4px;
@@ -598,6 +608,7 @@ a.box-rounded{
 //header
 
 header{
+  margin-bottom:60px;
   .header-inner{
     background-image:url(../images/all_natural.png);
     background-repeat:no-repeat;
