@@ -575,7 +575,7 @@ body{
 }
 
 .right{
-  float: right;
+  float: right!important;
 }
 
 .border-bottom{
@@ -641,14 +641,28 @@ header{
   margin-top:20px;
   .admin-pannel{
     margin-top:15px;
-    a{
-      border-radius:5px;
-    }
-    .btn{
-      padding:10px 20px;
-    }
-    .icon-play{
-      @include transform(rotate(90deg));
+    .dropdown-menu{
+      min-width:100%;
+      margin-top:33px;
+      box-shadow:none;
+      border:none;
+      background-color:$primary-color;
+      border-top-left-radius:0px;
+      border-top-right-radius:0px;
+      border-top:1px solid rgba(255,255,255,.2);
+      li{
+        margin:0;
+      }
+      a{
+        color:#fff!important;
+        font-size:12px;
+        font-weight:bold;
+        padding:5px 30px;
+        &:hover{
+          background-image:none;
+          background-color:shade($primary-color,30%)!important;
+        }
+      }
     }
   }
 }

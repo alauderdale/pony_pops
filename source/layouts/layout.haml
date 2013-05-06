@@ -4,7 +4,7 @@
     %title
       Pony Pops
     = stylesheet_link_tag "normalize", "style" , "bootstrap"
-    = javascript_include_tag "jquery", "scripts"
+    = javascript_include_tag "jquery", "bootstrap", "scripts"
     %meta{:content => "width=device-width,initial-scale=1, user-scalable=no, maximum-scale=1", :name => "viewport"}
   %body
     %header
@@ -32,9 +32,17 @@
                 100 
                 items
             .four.columns.omega
-              %a.button.dropdown.right.full-width{:href=>"#"}
-                James Superlonglastname
-                .icon-white.icon-play
+              .dropdown
+                %a#dLabel.dropdown-toggle.button.right.full-width{"data-target" => "#", "data-toggle" => "dropdown", :href => "/page.html", :role => "button"}
+                  John Superlongname
+                  %b.caret
+                %ul.dropdown-menu{"aria-labelledby" => "dLabel", :role => "menu"}
+                  %li
+                    %a{:href=>"#"}
+                      My account
+                  %li
+                    %a{:href=>"#"}
+                      Payment Options
     .clearfix
     = yield 
     = partial "footer"
