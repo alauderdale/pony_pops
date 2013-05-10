@@ -100,13 +100,13 @@ table {
             }
         }
         td{
-            padding: $baseline/2 5px;
+            padding: $baseline/2 10px;
             line-height: $baseline - 1px;
             text-align: left;
             vertical-align: top;
-            border-top: 1px dashed $light-gray-color;
-            border-left:1px dashed $light-gray-color;
-            &:first-child{
+            border-top: 1px dashed black;
+            border-left:1px dashed black;
+            &:first-of-type{
               border-left:none;
             }
         }
@@ -123,7 +123,7 @@ table {
             }
         }
         &.table-bordered{
-            border:1px dashed $light-gray-color;
+            border:1px dashed black;
             border-collapse: separate;
             border-radius:4px;
             th{
@@ -152,30 +152,40 @@ body {
 //sweet baseline grid
 
 // body{
-//     background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0.1) 100%);
-//     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(95%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.1)));
-//     background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0.1) 100%);
-//     background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0.1) 100%);
-//     background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0.1) 100%);
-//     background-image: linear-gradient(top, rgba(0, 0, 0, 0.1) 95%, rgba(0, 0, 0, 0.1) 100%);
+//     background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0.1) 100%)!important;
+//     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(95%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.1)))!important;
+//     background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0.1) 100%)!important;
+//     background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0.1) 100%)!important;
+//     background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 95%, rgba(0, 0, 0, 0.1) 100%)!important;
+//     background-image: linear-gradient(top, rgba(0, 0, 0, 0.1) 95%, rgba(0, 0, 0, 0.1) 100%)!important;
 //     @include background-size (100% 24px);
 // }
 
 
 // type
+
+    h1,h2,h4{
+      color:$secondary-color;
+    }
+
     h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { 
         font-weight: inherit; 
     }
-    h1, h2, h3, h4, h5, h6, p {
-        margin-bottom:$baseline; 
+
+    h1,h2{
+        font-family:$font-one;
     }
 
-    h1,h2,h3,h4{
-        font-family:$font-one;
-        color:#0e0e0e;
+    h3{
+      font-weight:100;
     }
-    h5,h6{
+
+    h4,h5,h6{
         font-family:$font-two;
+    }
+
+    h1, h2, h3, h4, h5, h6, p {
+        margin-bottom:$baseline; 
     }
 
     p  {font-size: 1em; line-height:$baseline;}
@@ -925,6 +935,7 @@ header{
   ul{
     list-style:none;
     &.main-nav{
+      font-weight:bold;
       float: left;
       margin:0;
       padding:$baseline 0;
@@ -937,7 +948,7 @@ header{
           margin-right:0!important;
         }
         &:first-child, &:nth-child(3n+2){
-          border-bottom:none;
+          
         }
         a{
           display:block;
