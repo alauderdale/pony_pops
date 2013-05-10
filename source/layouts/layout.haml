@@ -7,42 +7,6 @@
     = javascript_include_tag "jquery", "bootstrap", "scripts"
     %meta{:content => "width=device-width,initial-scale=1, user-scalable=no, maximum-scale=1", :name => "viewport"}
   %body
-    %header
-      .wrapped
-        .header-inner.full-width.inline-block
-          %a.logo.three.columns.alpha{:href=>"index.html"}
-          .five.columns
-            %ul.main-nav.font-two
-              %li.border-bottom.border-top
-                %a{:href=>"base_css.html"}
-                  Shop
-              %li.border-bottom.border-top
-                %a{:href=>"#"}
-                  About
-              %li.border-bottom.border-top
-                %a{:href=>"#"}
-                  Contact
-              %li.border-bottom.border-top
-                %a{:href=>"#"}
-                  News
-          .admin-pannel.font-two
-            .three.columns.offset-by-one
-              %a.cart.button.right{:href=>"#"}
-                %i.icon-shopping-cart.icon-white
-                100 
-                items
-            .four.columns.omega
-              .dropdown
-                %a#dLabel.dropdown-toggle.button.right.full-width{"data-target" => "#", "data-toggle" => "dropdown", :href => "/page.html", :role => "button"}
-                  John Superlongname
-                  %b.caret
-                %ul.dropdown-menu{"aria-labelledby" => "dLabel", :role => "menu"}
-                  %li
-                    %a{:href=>"#"}
-                      My account
-                  %li
-                    %a{:href=>"#"}
-                      Payment Options
-    .clearfix
+    = partial "header"
     = yield 
     = partial "footer"
