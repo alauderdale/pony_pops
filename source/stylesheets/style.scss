@@ -166,9 +166,9 @@ body {
 .stars{
   &:before,&:after{
     content:"★";
-    color:black;
+    color:$text-color;
     position:relative;
-    top:-5px;
+    top:-4px;
     font-size: 0.8em;
   }
 }
@@ -354,7 +354,7 @@ input[type="button"] {
     border-radius: 4px;
     color: #fff;
     display: inline-block;
-    font-size: 0.66em;
+    font-size: 0.8em;
     font-weight: bold;
     text-decoration: none;
     cursor: pointer;
@@ -880,6 +880,11 @@ ul.inline{
          .offset-by-thirteen              { padding-left: 624px; }
          .offset-by-fourteen              { padding-left: 672px; }
          .offset-by-fifteen               { padding-left: 720px; }
+
+        //home
+        img.home-pop{
+          max-width:800px!important;
+         }
     }
 
 
@@ -931,6 +936,13 @@ ul.inline{
         //reset columns
         .text_columns_2,.text_columns_3,.text_columns_4{
           @include columns($text-column-gutter-width 1);
+        }
+        //home
+        img.home-pop{
+          display:none;
+         }
+        .divider-spacer{
+          margin-top:0!important;
         }
     }
 
@@ -1048,6 +1060,13 @@ header{
 
 //home
 
+img.home-pop{
+  margin: 24px 0; max-width: 897px; right: 432px; position: relative; top: -35px;
+}
+
+.divider-spacer{
+  margin-top:-$baseline*8;
+}
 
 ///footer
 
