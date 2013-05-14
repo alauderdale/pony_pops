@@ -13,13 +13,26 @@
   font-style: normal;
 }
 
+@font-face {
+    font-family: 'socialicoregular';
+    src: url('fonts/socialico-webfont.eot');
+    src: url('fonts/socialico-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/socialico-webfont.woff') format('woff'),
+         url('fonts/socialico-webfont.ttf') format('truetype'),
+         url('fonts/socialico-webfont.svg#socialicoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 //vars
 
 //font vars
 
-$font-one: 'oswaldregular';
-$font-two: 'American Typewriter', 'Courier New', Courier, Serif;
-$font-three: 'helvetica';
+$oswald-font-name: 'oswaldregular';
+$american-font-name: 'American Typewriter', 'Courier New', Courier, Serif;
+$helvetica-font-name: 'helvetica';
+$social-font-name: 'socialicoregular';
 
 
 //color vars
@@ -139,7 +152,7 @@ table {
 // body
 
 body {
-        font: 100% $font-three;
+        font: 100% $helvetica-font-name;
         font-size:16px;
         color: $text-color;
         background:$bg-color url(../images/top-pattern.png) repeat-x;
@@ -183,7 +196,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
 h1,h2{
-    font-family:$font-one;
+    font-family:$oswald-font-name;
 }
 
 h3{
@@ -191,7 +204,7 @@ h3{
 }
 
 h4,h5,h6{
-    font-family:$font-two;
+    font-family:$american-font-name;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -232,14 +245,18 @@ code{
 
 //font families
 
-.font-one{
-    font-family:$font-one;
+.oswald-font-name{
+    font-family:$oswald-font-name;
 }
-.font-two{
-    font-family:$font-two;
+.american-font-name{
+    font-family:$american-font-name;
 }
-.font-three{
-    font-family:$font-three;
+.helvetica-font-name{
+    font-family:$helvetica-font-name;
+}
+
+.social-font-name{
+    font-family:$social-font-name;
 }
 
 //alignment
@@ -344,6 +361,14 @@ a{
 
 // buttons
 
+header{
+    .button{
+        font-size:0.8em;
+        text-transform:none;
+        font-family:$american-font-name;
+    }
+}
+
 .button,
 button,
 input[type="submit"],
@@ -354,7 +379,8 @@ input[type="button"] {
     border-radius: 4px;
     color: #fff;
     display: inline-block;
-    font-size: 0.8em;
+    font-size: 1.3;
+    text-transform:uppercase;
     font-weight: bold;
     text-decoration: none;
     cursor: pointer;
@@ -362,6 +388,7 @@ input[type="button"] {
     line-height: $baseline;
     padding:$baseline/2 20px;
     @include transition-duration(.1s);
+    font-family:$oswald-font-name;
     &:hover{
         background:shade($primary-color,20%);
         color:white;
@@ -1078,10 +1105,24 @@ footer{
   color:#fff;
   h2{
     color:#fff;
+
     border-bottom:1px solid #333;
   }
-  p{
+  p,a{
     color:#bbbbbb;
     font-size:.9em;
+    &:hover{
+        text-decoration:none;
+    }
+  }
+  .social-menu{
+    .social-font-name{
+        font-size:3em;
+    }
+    .menu-text{
+        position:relative;
+        top:-10px;
+        margin-left:2px;
+    }
   }
 }
