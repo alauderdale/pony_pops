@@ -363,7 +363,7 @@ a{
 
 header{
     .button{
-        font-size:0.8em;
+        font-size:0.7em;
         text-transform:none;
         font-family:$american-font-name;
     }
@@ -1096,11 +1096,6 @@ header{
     .rule{
         border-color:$bg-color;
     }
-    .home-horses{
-        background-image:url(../images/home_horses.png);
-        background-repeat:repeat-x;
-        min-height:400px;
-    }
 }
 
 img.home-pop{
@@ -1112,7 +1107,19 @@ img.home-pop{
 }
 
 
+//slider
 
+.slider{
+    img{
+        max-width:9999px;
+    }
+
+    .slider-caption{
+        position: relative !important;
+        top: -500px !important;
+        background: none !important;
+    }
+}
 
 ///footer
 
