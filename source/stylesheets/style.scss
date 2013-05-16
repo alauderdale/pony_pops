@@ -1087,6 +1087,22 @@ header{
 
 //home
 
+.hero{
+    background-color:black;
+    color:white!important;
+    h1{
+        color:$bg-color;
+    }
+    .rule{
+        border-color:$bg-color;
+    }
+    .home-horses{
+        background-image:url(../images/home_horses.png);
+        background-repeat:repeat-x;
+        min-height:400px;
+    }
+}
+
 img.home-pop{
   margin: 24px 0; max-width: 897px; right: 432px; position: relative; top: -35px;
 }
@@ -1094,6 +1110,9 @@ img.home-pop{
 .divider-spacer{
   margin-top:-$baseline*8;
 }
+
+
+
 
 ///footer
 
